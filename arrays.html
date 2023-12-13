@@ -24,13 +24,30 @@
         fruits[1] = "pear"
         console.log(fruits);*/
 
-       /* let numbers = ["1", "2", "4", "88", "10", "898"]
-        let lengthofnumbers = numbers.length
-        console.log(lengthofnumbers);*/
+        /* let numbers = ["1", "2", "4", "88", "10", "898"]
+         let lengthofnumbers = numbers.length
+         console.log(lengthofnumbers);*/
 
-        let languages=["english", "swahili", "kamba", "french", "kalenjin"]
-        console.log(languages.pop());
-        console.log(languages);
+        /* let languages=["english", "swahili", "kamba", "french", "kalenjin"]
+         console.log(languages.pop());
+         console.log(languages);*/
+
+        /*let arr1 = ["A", "B", "C", "D", "E"];
+        let arr2 = ["1", "2", "4", "88", "10", "898"];
+
+        let combinedArray = arr1.concat(arr2);
+        combinedArray.shift();
+        console.log(combinedArray);*/
+
+        //given array
+        let sourceArray = ['a', 'b', 'c', 'd', 'e'];
+        //Extraction of subarray from index 2 to index 4 (end index not inclusive) using slice()
+        let extractedArray = sourceArray.slice(2, 4);
+        // Modification the extractedArray by replacing its elements with 'x', 'y', and 'z' using splice()
+        extractedArray.splice(0, extractedArray.length, 'x', 'y', 'z');
+        // Print the sourceArray and the modified extractedArray
+        console.log('Source Array:', sourceArray);
+        console.log('Modified Extracted Array:', extractedArray);
 
 
 
