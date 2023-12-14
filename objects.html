@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //JS OBJECTS 
+
+        let person = {
+            name: "peter tsidoli",
+            gender: "male",
+            age: 30
+
+        }
+
+        //ACCESSING PROPERTIES IN AN OBJECT
+        console.log(person['age']); //using brackets (you must pass the property as a string)
+        console.log(person.age);  //using dot notation 
+
+        //ADDING PROPERTIES INTO AN OBJECT
+        person.location = "kiambu"
+        person.occupation = "driver"
+        console.log(person);
+
+        //update/modifying a property in an object
+
+        person.age = 35   //method 1
+        //person["age"]=36    //method 1=2
+        console.log(person)
+
+        //displaying a property with an array in an object
+
+        let person1 = {
+            name: "ian",
+            address: ["123", "kimathi-street"]
+        }
+        console.log(person1["address"][1])
+
+        let my_array = [1, 2, 3, 4, 5, {
+            name: "rayon", age: 30, address: ["123", "kimathi-street"]
+        }];
+
+        console.log(my_array[5].address[1]);
+
+    </script>
+
+</body>
+
+</html>
