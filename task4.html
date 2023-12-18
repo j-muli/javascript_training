@@ -9,11 +9,12 @@
 
 <body>
     <script>
-        //a program which gets a phone number from a form input or terminal
-
-        let phone_num= prompt ("enter phone number: ")
-        
-
+        let email = prompt("enter email")
+        if (email.includes("@") && email.includes(".")) {
+            alert("valid email")
+        } else {
+            alert("invalid email")
+        }
 
     </script>
 </body>
