@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       /* let password = prompt("enter password: ");
+        let attempt = 0;
+        let pass = "admin@123"
+
+        for (let i = 0; i < attempt; i++) {
+            if (password == pass) {
+                console.log("access granted");
+            } else {
+                console.log("incorrect password");
+            }
+        } if (attempt >=4){
+            console.log('enter password')
+        }*/
+    
+
+        let maxAttempts = 4;
+let pass = "admin@123";
+
+for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    let password = prompt("Enter password: ");
+
+    if (password === pass) {
+        console.log("Access granted");
+        break;
+    } else {
+        console.log("Incorrect password. Attempts remaining: " + (maxAttempts - attempt));
+    }
+
+    if (attempt === maxAttempts) {
+        console.log("Account blocked");
+    }
+}
+
+
+
+
+
+    </script>
+</body>
+
+</html>
