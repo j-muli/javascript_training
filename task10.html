@@ -16,8 +16,10 @@
         //introduce a for loop to iterate through the pdoducts array
         for (i = 0; i < prods.length; i++) {
             //extract the last digit from the third element of each product array 
-            let stock = +prods[i][2].slice(-1);
-            totalstock += stock;
+            let stock = prods[i][2];
+            let stk=Number(stock)
+            totalstock += stk;
+            console.log(prods[i][2])
         }
         console.log(`The total stock in the company is: ${totalstock} units`);
 
