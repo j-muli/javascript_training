@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let correctEmail = "admin@mail.com";
+        let correctPassword = "Admin@123";
+        let loginAttempts = 3;
+
+        while (loginAttempts > 0) {
+            // Prompt user for email and password
+            let userEmail = prompt("Enter your email:");
+            let userPassword = prompt("Enter your password:");
+
+            // Check if email and password are correct
+            if (userEmail === correctEmail && userPassword === correctPassword) {
+                console.log("Login is Successful");
+                break; // Exit the loop on successful login
+            } else {
+                loginAttempts--;
+
+                if (loginAttempts > 0) {
+                    console.log(loginAttempts);
+                } else {
+                    console.log("You have been blocked. Too many unsuccessful attempts.");
+                }
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

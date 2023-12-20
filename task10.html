@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let prods = [['omo', '30kshs', '300'], ['milk', '50kshs', '200'], ['bread', '45kshs', '359'],
+        ['coffee', '5kshs', '79']]
+
+        let totalstock = 0
+        //introduce a for loop to iterate through the pdoducts array
+        for (i = 0; i < prods.length; i++) {
+            //extract the last digit from the third element of each product array 
+            let stock = +prods[i][2].slice(-1);
+            totalstock += stock;
+        }
+        console.log(`The total stock in the company is: ${totalstock} units`);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
