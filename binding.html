@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
+    <h1 id="name"> </h1>
+    
     <script>
-        let rows = 5
-        for (let i = 0; i <= rows; i++) {
-            for (let j = 1; j <= i; j++) {
-                document.write("* ");
-            }
-            document.write("<br/>");
-        }
+        let firstName= "muli"
+        let secondName= "kakua"
+        let fullName= firstName+ " "+ secondName
+        document.getElementById ('name').innerHTML=fullName
+
+
     </script>
 </body>
-
 </html>
